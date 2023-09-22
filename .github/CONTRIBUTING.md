@@ -9,7 +9,7 @@ Please use the pre-filled template to save time.
 
 ## Contribution workflow
 
-If you'd like to write some code for nf-core/riboflow, the standard workflow is as follows:
+If you'd like to write some code for riboflow, the standard workflow is as follows:
 
 1. Check that there isn't already an issue about your idea in the [riboflow issues](https://github.com/number-25/riboflow/issues) to avoid duplicating work. If there isn't one already, please create one so that others know you're working on this
 2. [Fork](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) the [riboflow repository](https://github.com/number-25/riboflow) to your GitHub account
