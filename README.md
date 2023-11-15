@@ -22,8 +22,30 @@
 <!-- TODO nf-core: Describe the minimum required steps to execute the pipeline, e.g. how to prepare samplesheets.
      Explain what rows and columns represent. For instance (please edit as appropriate):
 
-First, prepare a samplesheet with your input data that looks as follows:
 
+-->
+### Test run 
+To simply run the pipeline with sample data, first fetch (download) the
+provided fastq files as listed by their SRA id in `assets/ids.csv`. This uses
+the nf-core [fetchngs](https://nf-co.re/fetchngs/1.11.0) utility.      
+
+```bash
+nextflow run nf-core/fetchngs \ 
+    --profile <path to your config file> 
+    --input <path to ids.csv>  
+    --output <path to output directory for fastq files> 
+```
+
+A corresponding test samplesheet is preformatted with the respective fastq
+files retrieved above.  
+
+```csv
+sample,fastq
+```   
+
+### Run from scratch  
+
+First, prepare a samplesheet with your input data that looks as follows:
 `samplesheet.csv`:
 
 ```csv
@@ -32,8 +54,6 @@ CONTROL_REP1,AEG588A1_S1_L002_R1_001.fastq.gz,AEG588A1_S1_L002_R2_001.fastq.gz
 ```
 
 Each row represents a fastq file (single-end) or a pair of fastq files (paired end).
-
--->
 
 Now, you can run the pipeline using:
 
