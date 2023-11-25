@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/nf-core/riboflow/master/nextflow_schema.json",
-    "title": "nf-core/riboflow pipeline parameters",
+    "title": "riboflow pipeline parameters",
     "description": "Analysis pipeline for RiboSeq sequencing data",
     "type": "object",
     "definitions": {
